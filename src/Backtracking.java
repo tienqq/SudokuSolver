@@ -1,10 +1,10 @@
 import java.util.Arrays;
 
-public class SudokuSolver {
+public class Backtracking {
     public int[][]puzzle;
     private final int size = 9;
 
-    public SudokuSolver(int[][]puzzle){
+    public Backtracking(int[][]puzzle){
         this.puzzle = puzzle;
     }
 
@@ -60,7 +60,7 @@ public class SudokuSolver {
         return true;
     }
 
-    public void printSolvedPuzzle(){
+    public void printPuzzle(){
         for(int[] x: puzzle)
             System.out.println(Arrays.toString(x));
     }
